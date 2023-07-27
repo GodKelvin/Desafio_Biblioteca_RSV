@@ -15,6 +15,7 @@ editoras_list = [
   { nome: 'Editora D' },
   { nome: 'Editora E' }
 ]
+puts "Criando editoras"
 Editora.create(editoras_list)
 
 # Autores
@@ -25,6 +26,7 @@ autores_list = [
   { nome: 'Autor 4', data_nascimento: '1975-11-10', pais: 'País 1' },
   { nome: 'Autor 5', data_nascimento: '1995-09-25', pais: 'País 2' }
 ]
+puts "Criando autores"
 Autor.create(autores_list)
 
 # Livros
@@ -35,6 +37,7 @@ livros_list = [
   { titulo: 'Livro 4', editora_id: 3, isbn: '7890123456789' },
   { titulo: 'Livro 5', editora_id: 4, isbn: '5432167890123' }
 ]
+puts "Criando livros"
 Livro.create(livros_list)
 
 # Exemplares
@@ -45,6 +48,7 @@ exemplares_list = [
   { livro_id: 3, locado: false },
   { livro_id: 4, locado: true }
 ]
+puts "Criando exemplares"
 Exemplar.create(exemplares_list)
 
 # Clientes
@@ -55,6 +59,7 @@ clientes_list = [
   { nome: 'Cliente 4', cpf: '44444444444', telefone: '44444444444' },
   { nome: 'Cliente 5', cpf: '55555555555', telefone: '55555555555' }
 ]
+puts "Criando clientes"
 Cliente.create(clientes_list)
 
 # Enderecos
@@ -65,6 +70,7 @@ enderecos_list = [
   { pais: 'País 3', estado: 'Estado 3', cidade: 'Cidade 3', bairro: 'Bairro 4', numero: 101, cep: 12345, nome: 'Endereco 4', cliente_id: 4 },
   { pais: 'País 2', estado: 'Estado 2', cidade: 'Cidade 2', bairro: 'Bairro 5', numero: 112, cep: 54321, nome: 'Endereco 5', cliente_id: 5 }
 ]
+puts "Criando enderecos"
 Endereco.create(enderecos_list)
 
 # Emprestimos
@@ -75,6 +81,7 @@ emprestimos_list = [
   { emprestimo: '2023-07-12', devolucao: '2023-07-28', exemplar_id: 4, cliente_id: 4 },
   { emprestimo: '2023-07-15', devolucao: '2023-07-30', exemplar_id: 5, cliente_id: 5 }
 ]
+puts "Criando emprestimos"
 Emprestimo.create(emprestimos_list)
 
 autor_livros_list = [
@@ -84,4 +91,5 @@ autor_livros_list = [
   { autor_id: 4, livro_id: 3 },
   { autor_id: 5, livro_id: 4 }
 ]
+puts "Criando autor_livros"
 AutorLivro.create(autor_livros_list)

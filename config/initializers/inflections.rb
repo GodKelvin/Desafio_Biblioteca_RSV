@@ -14,7 +14,7 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym "RESTful"
 # end
-ActiveSupport::Inflector.inflections(:pt) do |inflect|
+ActiveSupport::Inflector.inflections do |inflect|
   # Singular
   inflect.irregular 'livro', 'livros'
   inflect.irregular 'exemplar', 'exemplares'
@@ -24,6 +24,5 @@ ActiveSupport::Inflector.inflections(:pt) do |inflect|
   inflect.irregular 'endereco', 'enderecos'
   inflect.irregular 'emprestimo', 'emprestimos'
   inflect.irregular 'autor_livro', 'autor_livros'
-  inflect.plural 'emprestimo', 'emprestimos'
 end
 

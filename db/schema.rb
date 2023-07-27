@@ -84,10 +84,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_27_135126) do
     t.index ["editora_id"], name: "index_livros_on_editora_id"
   end
 
-  add_foreign_key "autor_livros", "autors"
+  add_foreign_key "autor_livros", "autores"
   add_foreign_key "autor_livros", "livros"
   add_foreign_key "emprestimos", "clientes"
-  add_foreign_key "emprestimos", "exemplars"
+  add_foreign_key "emprestimos", "exemplares"
   add_foreign_key "enderecos", "clientes"
   add_foreign_key "exemplares", "livros"
   add_foreign_key "livros", "editoras"
