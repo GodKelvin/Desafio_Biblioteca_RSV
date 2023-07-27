@@ -5,7 +5,7 @@ URL: https://dbdiagram.io/d/64b9278502bd1c4a5e68f069
 
 ## Modelo Lógico
 <div align="center">
-
+  <img alt="Kelvin-Ts" src="./imgs_readme/Biblioteca_RSV.png">
 </div>
 
 
