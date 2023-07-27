@@ -4,7 +4,8 @@
 
 URL: https://dbdiagram.io/d/64b9278502bd1c4a5e68f069
 
-## Refinando o modelo porque encontrei trocentos erros nesse troço
-
-- Adicionando tabela de exemplares, visto que, livro é a entidade de cadastro e não de quantidade.
-- Adicionando tabela de país de origem para popular o campo de autores.
+## Refinando o modelo 
+- Criando tabela de exemplares, visto que livro é apenas a representação e não o objeto em si.
+- Inserindo ID de exemplar em empréstimo, visto que é necessário identificar o que foi emprestado.
+- Adicionando tabela de endereços.
+- Adicionando tabela de editoras.
